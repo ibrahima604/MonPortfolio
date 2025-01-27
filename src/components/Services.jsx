@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/Services.css";
-import { FaLaptopCode, FaTools, FaCloudUploadAlt } from "react-icons/fa"; // Importation d'icônes depuis react-icons
+import { FaLaptopCode, FaTools, FaCloudUploadAlt, FaGraduationCap } from "react-icons/fa"; // Ajout de l'icône de formation
 
 const services = [
   {
@@ -20,6 +20,12 @@ const services = [
     titre: "Déploiement",
     description: "Déploiement de vos applications sur des serveurs fiables pour une disponibilité constante.",
     icon: <FaCloudUploadAlt />, // Icône de déploiement
+  },
+  {
+    id: 4,
+    titre: "Formation",
+    description: "Je propose des formations en développement web pour vous permettre de maîtriser les compétences nécessaires à la création d'applications modernes.",
+    icon: <FaGraduationCap />, // Icône de formation
   },
 ];
 

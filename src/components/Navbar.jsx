@@ -13,12 +13,6 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Logo */}
         <div className="navbar-logo">Mon<span>PortFolio</span></div>
-
-        {/* Menu burger (mobile) */}
-        <div className="navbar-burger" onClick={toggleMenu}>
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </div>
-
         {/* Links */}
         <ul className={`navbar-links ${isOpen ? "active" : ""}`}>
           <li>
@@ -45,6 +39,11 @@ const Navbar = () => {
         <button className="contact-button">Contact</button>
     </a>
 </div>
+ {/* Menu burger (mobile) */}
+ <div className="navbar-burger" onClick={toggleMenu}>
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </div>
+
       </div>
     </nav>
   );
