@@ -1,31 +1,56 @@
-import React, { useState } from "react";
 import "../style/Contact.css";
+import Swal from "sweetalert2";
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
+    // Ajoutez votre clé d'accès pour Web3Forms
+    formData.append("access_key", "cef6a64b-aaf1-4e8b-a145-3f91890d931f");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Logique d'envoi des données (par ex. avec une API)
-    console.log("Form Data Submitted: ", formData);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      }).then((res) => res.json());
+
+      if (res.success) {
+        Swal.fire({
+          title: "Message envoyé !",
+          text: "Votre message a été envoyé avec succès. Merci de m'avoir contacter !",
+          icon: "success",
+        });
+        // Réinitialisez le formulaire
+        event.target.reset();
+      } else {
+        Swal.fire({
+          title: "Erreur",
+          text: "Une erreur s'est produite lors de l'envoi du message.",
+          icon: "error",
+        });
+      }
+    } catch (error) {
+      Swal.fire({
+        title: "Erreur",
+        text: "Une erreur inattendue s'est produite. Veuillez réessayer plus tard.",
+        icon: "error",
+      });
+      console.error("Erreur lors de l'envoi :", error);
+    }
   };
 
   return (
     <div className="contact-container" id="contact-section">
       <h1 className="contact-title">Contactez-moi</h1>
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form className="contact-form" onSubmit={onSubmit}>
         <div className="form-group">
           <label htmlFor="name">Nom</label>
           <input
@@ -33,8 +58,6 @@ function Contact() {
             id="name"
             name="name"
             placeholder="Entrez votre nom"
-            value={formData.name}
-            onChange={handleChange}
             required
           />
         </div>
@@ -45,8 +68,6 @@ function Contact() {
             id="email"
             name="email"
             placeholder="Entrez votre email"
-            value={formData.email}
-            onChange={handleChange}
             required
           />
         </div>
@@ -56,8 +77,6 @@ function Contact() {
             id="message"
             name="message"
             placeholder="Écrivez votre message"
-            value={formData.message}
-            onChange={handleChange}
             required
           />
         </div>
@@ -70,4 +89,3 @@ function Contact() {
 }
 
 export default Contact;
-
