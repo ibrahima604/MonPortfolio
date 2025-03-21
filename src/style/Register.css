@@ -1,0 +1,31 @@
+/* Centrer le formulaire et ajouter des styles personnalisés */
+.section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .box {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    margin-bottom: 1.5rem;
+  }
+  
+  .button.danger {
+    background-color: #ff3860;
+    border-color: transparent;
+    color: #fff;
+  }
+  
+  .button.danger:hover {
+    background-color: #ff1f4b;
+  }
+  
+  .has-text-danger {
+    color: #ff3860 !important;
+  }
+  
+  .has-text-danger:hover {
+    color: #ff1f4b !important;
+  }

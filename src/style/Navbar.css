@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color:khaki; /* Couleur bleue */
+    color:black;
+    padding: 0.5rem 1rem;
+    position: relative;
+    z-index: 10;
+    position: sticky;
+    top:0;
+    border-radius: 10px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Burger Menu */
+  .navbar-burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  /* Links */
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #cbd5e1; /* Gris clair */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-burger {
+      display: block;
+      position: absolute;
+      right:5px;
+      top: 7px;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      position: absolute;
+      top: 25px;
+      
+     right: 0;
+      width: 100%;
+      border-radius: 15px;
+      background-color:khaki;
+      padding: 1rem 0;
+      transform: translateY(-200%);
+      opacity: 0;
+      visibility: hidden;
+      
+    }
+  
+    .navbar-links.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    .navbar-links li {
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+  }
+  .contact button{
+    text-decoration: none;
+    color:white;
+    width: 100px;
+    height: 25px;
+    background-color: red;
+    border-radius: 5px;
+  }
+  .navbar-logo span{
+    color: red;
+  }

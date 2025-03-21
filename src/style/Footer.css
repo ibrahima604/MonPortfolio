@@ -1,0 +1,52 @@
+/* Conteneur global */
+.footer {
+  background-color: #1f2937; /* Fond gris foncé */
+  padding: 3rem 1rem;
+}
+
+/* Conteneur interne */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Titre du footer */
+.title.is-4 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #3b82f6; /* Couleur bleue */
+}
+
+/* Texte descriptif */
+.subtitle.is-6 {
+  font-size: 1rem; /* Taille 16px */
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: #e5e7eb; /* Gris clair */
+}
+
+/* Icônes des réseaux sociaux */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Espacement entre les icônes */
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  color: #f9fafb; /* Couleur blanche */
+  font-size: 2rem; /* Taille des icônes */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+  color: #3b82f6; /* Couleur bleue au survol */
+  transform: scale(1.2); /* Agrandissement */
+}
+
+/* Texte de copyright */
+.is-size-7 {
+  font-size: 0.875rem; /* Taille 14px */
+  color: #9ca3af; /* Gris plus clair */
+  margin-top: 1rem;
+}
