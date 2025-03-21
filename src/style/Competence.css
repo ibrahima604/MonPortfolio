@@ -1,0 +1,45 @@
+/* Conteneur principal */
+.competence {
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Titre */
+  .competence h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #00796b;
+    transition: all 0.3s ease;
+  }
+  
+  /* Cartes des compétences */
+  .skill-box {
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .skill-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logos */
+  .skill-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .skill-box {
+      padding: 15px;
+    }
+  
+    .competence h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
