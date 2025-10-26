@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Dans quel domaine étudies-tu actuellement ?",
+    "answer": "Informatique – Parcours MIAGE à l’Université Paris-Saclay."
+  },
+  {
+    "question": "Quel diplôme as-tu obtenu au Maroc ?",
+    "answer": "Une licence fondamentale en Mathématiques et Informatique."
+  },
+  {
+    "question": "Quel est ton objectif d'études ?",
+    "answer": "Je souhaite obtenir une alternance pour un Master MIAGE ou informatique en 2026-2027."
+  },
+  {
+    "question": "Quels langages de programmation utilises-tu ?",
+    "answer": "JavaScript, Python, C, Java et PHP."
+  },
+  {
+    "question": "Quelles technologies web maîtrises-tu ?",
+    "answer": "React.js, Laravel, Node.js, HTML5, CSS3, Tailwind CSS."
+  },
+  {
+    "question": "Quelles bases de données sais-tu utiliser ?",
+    "answer": "MySQL, PostgreSQL, SQL et Oracle."
+  },
+  {
+    "question": "Quelles sont tes expériences en backend ?",
+    "answer": "Développement API REST avec Laravel et Node.js, gestion des utilisateurs, sécurité et authentification."
+  },
+  {
+    "question": "As-tu déjà travaillé en tant que Full Stack ?",
+    "answer": "Oui, chez Voz Group où j’ai développé des projets web complets."
+  },
+  {
+    "question": "Quel projet notable as-tu réalisé pour ta licence ?",
+    "answer": "Un site e-commerce complet avec gestion du panier, commandes, base de données et espace admin en Laravel."
+  },
+  {
+    "question": "Quels sont tes projets académiques ?",
+    "answer": "Un système de gestion de pizzeria, un site e-commerce et une application mobile avec interface web."
+  },
+  {
+    "question": "Quel projet mobile as-tu réalisé ?",
+    "answer": "Un système de suivi des enfants à distance pour les parents – Projet de stage à CESAM."
+  },
+  {
+    "question": "Quelles notions de cybersécurité maîtrises-tu ?",
+    "answer": "Sécurité des API, hashing des mots de passe, sessions, filtrage et validation des données."
+  },
+  {
+    "question": "Où as-tu déjà travaillé ?",
+    "answer": "Chez Voz Group en télétravail, et CESAM pour mon stage académique."
+  },
+  {
+    "question": "Quelles langues parles-tu ?",
+    "answer": "Français (courant) et anglais élémentaire."
+  },
+  {
+    "question": "Quels sont tes centres d’intérêt ?",
+    "answer": "Le développement web, IA, technologies innovantes."
+  },
+  {
+    "question": "Quel type de contrat recherches-tu ?",
+    "answer": "Une alternance à partir de 2026 : rythme flexible, en informatique ou MIAGE."
+  },
+  {
+    "question": "Quels frameworks frontend sais-tu utiliser ?",
+    "answer": "React.js, Tailwind CSS et Bulma."
+  },
+  {
+    "question": "Quel système de versionnage utilises-tu ?",
+    "answer": "Git et GitHub."
+  },
+  {
+    "question": "As-tu déjà travaillé avec Node.js ?",
+    "answer": "Oui, pour un projet de chat en temps réel avec Socket.io."
+  },
+  {
+    "question": "As-tu déjà utilisé Docker ?",
+    "answer": "Notions de base et déploiement en local d’API containerisée."
+  },
+  {
+    "question": "Quel environnement de travail utilises-tu ?",
+    "answer": "Linux, VS Code, GitHub, Docker, Figma."
+  },
+  {
+    "question": "Quels outils de conception maîtrises-tu ?",
+    "answer": "UML, Merise, modélisation MCD/MLD."
+  },
+  {
+    "question": "As-tu déjà utilisé une API externe ?",
+    "answer": "Oui, intégration d’API REST pour authentification et gestion des utilisateurs."
+  },
+  {
+    "question": "Code-tu en Python ?",
+    "answer": "Oui, principalement pour l’IA, la logique et l’algorithmique."
+  },
+  {
+    "question": "As-tu fait de l'intelligence artificielle ?",
+    "answer": "Oui, avec Python : ID3, Perceptron, MinMax, A*, BFS, DFS..."
+  },
+  {
+    "question": "As-tu des compétences en gestion de projet ?",
+    "answer": "Oui, utilisation de GitHub Projects, Trello et méthodes Agile."
+  },
+  {
+    "question": "Quels serveurs web sais-tu utiliser ?",
+    "answer": "Apache, Nginx (notions)."
+  },
+  {
+    "question": "As-tu déjà fait du responsive design ?",
+    "answer": "Oui avec Tailwind et media queries."
+  },
+  {
+    "question": "As-tu déjà déployé un projet ?",
+    "answer": "Oui sur AWS (EC2), GitHub Pages et autres hébergeurs."
+  },
+  {
+    "question": "Où habites-tu actuellement ?",
+    "answer": "France."
+  }
+]
